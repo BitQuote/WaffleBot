@@ -1,0 +1,10 @@
+{
+	"self_token": "",
+	"user_id": "",
+	"bot_name": "WaffleBot",
+	"owner_name": "",
+	"prefix": "self.",
+	"msg_timeout": 3000,
+	"error_color": 12731971,
+	"success_color": 37765
+}
