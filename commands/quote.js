@@ -5,6 +5,8 @@
 const createTimedMessage = require('./../modules/timedMessage');
 
 module.exports = bot => bot.registerCommand('quote', (msg, args) => {
+  msg.delete();
+
   if (args.length > 0) {
     const messageID = args[0];
     let channel = msg.channel;

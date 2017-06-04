@@ -5,6 +5,8 @@
 const createTimedMessage = require('./../modules/timedMessage');
 
 module.exports = bot => bot.registerCommand('help', (msg, args) => {
+  msg.delete();
+
   if (args[0]) {
     const command = bot.commands[args[0]];
     if (command) {

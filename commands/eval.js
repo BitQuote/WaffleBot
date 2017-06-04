@@ -3,6 +3,8 @@
  */
 
 module.exports = bot => bot.registerCommand('eval', (msg, args) => {
+  msg.delete();
+
   const expression = args.join(' ');
   let result;
   let status;

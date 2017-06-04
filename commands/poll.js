@@ -5,6 +5,8 @@
 const createTimedMessage = require('./../modules/timedMessage');
 
 module.exports = bot => bot.registerCommand('poll', (msg, args) => {
+  msg.delete();
+
   const title = args.join(' ');
   if (title) {
     msg.channel.createMessage({

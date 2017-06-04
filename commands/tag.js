@@ -7,6 +7,8 @@ const tags = require('./../modules/tagEditor');
 
 module.exports = (bot) => {
   const tagCommand = bot.registerCommand('tag', (msg, args) => {
+    msg.delete();
+
     const name = args[0];
     if (name) {
       const value = tags.get(name);

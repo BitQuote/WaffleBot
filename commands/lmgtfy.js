@@ -39,6 +39,8 @@ const searchEngineMap = {
 const defaultSearchEngine = 'google';
 
 module.exports = bot => bot.registerCommand('lmgtfy', (msg, args) => {
+  msg.delete();
+
   let type = defaultSearchEngine;
   let query;
 

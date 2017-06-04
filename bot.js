@@ -16,7 +16,6 @@ const bot = new Eris.CommandClient(config.self_token, {}, {
   defaultHelpCommand: false,
   defaultCommandOptions: {
     caseInsensitive: true,
-    deleteCommand: true,
     requirements: {
       userIDs: [
         config.user_id,

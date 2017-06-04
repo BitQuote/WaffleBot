@@ -5,6 +5,8 @@
 const createTimedMessage = require('./../modules/timedMessage');
 
 module.exports = bot => bot.registerCommand('profile', (msg, args) => {
+  msg.delete();
+
   const query = args.join(' ');
   if (query) {
     let user;
